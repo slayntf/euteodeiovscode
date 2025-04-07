@@ -1,0 +1,109 @@
+/* Resetando algumas propriedades */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #202020;
+    color: white;
+  }
+  
+  header .logo h1 {
+    font-size: 24px;
+  }
+  
+  header .search-bar input {
+    padding: 8px;
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  header .profile img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Barra lateral */
+  .sidebar {
+    width: 200px;
+    background-color: #202020;
+    padding: 20px;
+    position: fixed;
+    height: 90%;
+    top: 0;
+    margin-top: 50px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* Conteúdo Principal */
+  .container {
+    display: grid;
+    margin-bottom: 20px;
+    
+  }
+  
+  .content {
+    
+    display: grid;
+    grid-template-columns: repeat (auto, auto, auto);
+    gap: 20px;
+    padding: 20px;
+    justify-items: end;
+  }
+  
+  .video-pricipal{
+    display: grid;
+    justify-self: center;
+    
+    
+  }
+  .video {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .video img {
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .video h3 {
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  .video p {
+    margin: 10px;
+  color:#555;
+  }
+  
