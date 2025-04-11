@@ -1,108 +1,128 @@
 /* Resetando algumas propriedades */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Corpo */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #2c2c2c;
-  }
-  
-  /* Cabeçalho */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #202020;
-    color: white;
-  }
-  
-  header .logo h1 {
-    font-size: 24px;
-  }
-  
-  header .search-bar input {
-    padding: 8px;
-    width: 400px;
-    border-radius: 20px;
-    border: none;
-  }
-  
-  header .profile img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-  }
-  
-
-   /* Conteúdo Principal */
-  .container {
-    display: grid;
-    margin-bottom: 20px;
-    
-  }
-  
-  .content {
-    display: grid;
-    grid-template-columns: repeat (auto, auto, auto);
-    gap: 20px;
-    padding: 20px;
-    justify-items: end;
-  }
-  
-  .video-principal{
-    display: grid;
-    margin: 30px;  
-    
-  }
-  .video-principal h2{
-    color: white;
-  }
-  .video-principal p{
-    color: white;
-  }
-
-  .canal{
-    display: flex;
-  }
-  
-  .canal p{
-    font-size: 13px;
-    color: white;
-  }
-
-  .canal img{
-    margin-left: 22px;
-    border-radius: 50px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- .canal h5{
-    color: white;
- }
 
-  .video {
-    margin-top: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
+/* Corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2c2c2c;
+}
+
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #202020;
+  color: white;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header .logo h1 {
+  font-size: 24px;
+}
+
+header .search-bar input {
+  padding: 8px;
+  width: 400px;
+  border-radius: 20px;
+  border: none;
+}
+
+header .profile img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+
+ /* Conteúdo Principal */
+.container {
+  display: grid;
+  margin-bottom: 20px;
   
-  .video img {
-    width: 100%;
-    border-bottom: 2px solid #ddd;
-  }
-  
-  .video h3 {
-    font-size: 18px;
-    margin: 10px;
-  }
-  
-  .video p {
-    margin: 10px;
-  color:#555;
-  }
-  
+}
+.tck-grande{
+  display: grid;
+  grid-row: 1 / 5; /* Foto grande ocupa 3 linhas */
+  margin: 30px;  
+  justify-self: start;
+  margin: 20;
+  padding: 0;
+  display: block;
+  border: none;
+
+}
+.tck-grande h2{
+  color: white;
+}
+.tck-grande p{
+  color: white;
+}
+
+.canal{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  align-self: start;
+  align-items: center;
+}
+
+.canal h1{
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center; 
+  column-gap: 5px;
+  color: white;
+}
+
+.canal img{
+  margin-left: 22px;
+  border-radius: 50px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Foto grande ocupa 2 partes, fotos pequenas 1 */
+  gap: 10px; /* Espaço entre os elementos */
+}
+
+.tck-pequeno{
+  display: grid;
+  grid-template-columns: auto;
+  size-adjust: auto;
+  justify-content: end; 
+  align-items: start;
+}
+.tck-pequeno {
+  display: grid; 
+  grid-template-columns: auto 1fr;
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Espaça os itens horizontalmente */
+}
+
+.tck-pequeno img {
+  border-bottom: 2px solid #ddd;
+  gap: 10px;
+}
+
+.tck-pequeno h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.tck-pequeno p {
+  margin: 10px;
+color:#555;
+}
